@@ -1,4 +1,5 @@
 🚀 DevOps Automation Project – CI/CD Pipeline Deployment
+
 📌 Project Overview
 
 This project demonstrates the implementation of a complete DevOps pipeline for a Java-based application. The goal is to automate the build, testing, code quality analysis, and deployment process using modern DevOps tools.
