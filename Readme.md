@@ -1,24 +1,44 @@
-🚀 DevOps Automation Project – CI/CD Pipeline Deployment
+## Architecture
 
-📌 Project Overview
+<p align="center">
+<img src="images/jenkins_workflow.png" width="900">
+</p>
 
-This project demonstrates the implementation of a complete DevOps pipeline for a Java-based application. The goal is to automate the build, testing, code quality analysis, and deployment process using modern DevOps tools.
+## Workflow
 
-⚙️ What I Did
-Built a backend application using Java Spring Boot with Maven for dependency management.
-Configured a Jenkins CI/CD pipeline to automate build and deployment processes.
-Integrated SonarQube for continuous code quality analysis and security checks.
-Deployed the application on an AWS EC2 instance using Apache Tomcat.
-Used H2 Database for lightweight data storage during development and testing.
-🛠️ Tools & Technologies Used
-Java
-Spring Boot
-Maven
-Jenkins
-SonarQube
-AWS EC2
-Apache Tomcat
-H2 Database
-🎯 Key Outcome
+1. Developer pushes code to GitHub.
+2. GitHub Webhook triggers Jenkins.
+3. Jenkins performs:
+   - Git Clone
+   - Maven Build
+   - Unit Testing
+4. SonarQube performs code quality analysis.
+5. WAR artifact is generated.
+6. Artifact is deployed to AWS EC2.
+7. Apache Tomcat hosts the application.
+8. Spring Boot application becomes live.
 
-Successfully automated the software delivery process, reducing manual effort and ensuring faster, reliable deployments with improved code quality.
+### Technologies
+
+- GitHub
+- Jenkins
+- Maven
+- SonarQube
+- Apache Tomcat
+- AWS EC2
+- Spring Boot
+
+---
+
+## Repository Structure
+
+```
+.
+├── terraform/
+├── ansible/
+├── docker/
+├── jenkins/
+├── app/
+├── images/
+└── README.md
+```
