@@ -1,7 +1,7 @@
 ## Architecture
 
 <p align="center">
-<img src="images/jenkins_workflow.png" width="900">
+<img src="images/jenkins_workflow.png" width="500">
 </p>
 
 ## Workflow
